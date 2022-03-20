@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+*,
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Rubik", sans-serif;
+	box-sizing: border-box;
+}
+html {
+	height: 100%;
+}
+
+body {
+	background-color: white;
+	width: 100%;
+	min-height: 100vh;
+}
+main {
+	background: hsl(270, 20%, 96%);
+	width: inherit;
+	min-height: inherit;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.phone {
+	width: 13.4rem;
+	height: 68vh;
+	border-radius: 1.5rem;
+	margin-top: 3rem;
+	background-color: white;
+	padding: 0.45rem;
+	box-shadow: 5px 25px 50px -15px gray;
+	margin-bottom: 2.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.phone-container {
+	background-color: hsl(270, 20%, 96%);
+	height: 85%;
+	width: 100%;
+	border-radius: 1.5rem;
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+	padding: 0.75rem;
+
+	display: flex;
+	flex-direction: column;
+}
+.phone-header {
+	/* border: solid 3px green; */
+	background: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+	width: 100%;
+	height: 4.5rem;
+	padding: 1rem;
+	border-top-right-radius: 1.25rem;
+	border-top-left-radius: 1.25rem;
+	border-bottom-left-radius: 0.3rem;
+	border-bottom-right-radius: 0.3rem;
+	display: flex;
+	/* justify-content: flex-end; */
+	align-items: flex-end;
+	position: relative;
+}
+
+.phone-header::before {
+	content: "";
+	width: 65%;
+	height: 23px;
+	background-color: white;
+	position: absolute;
+	top: -5px;
+	left: 35px;
+	border-radius: 50px;
+}
+.samuel {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+}
+h3 {
+	font-size: 0.75rem;
+	font-weight: 500;
+	color: white;
+	margin-left: 0.7rem;
+}
+.sub-heading {
+	font-size: 0.5rem;
+	font-weight: 400;
+	color: hsl(276, 100%, 81%);
+	margin-left: 0.7rem;
+}
+.core {
+	font-size: 7.5px;
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+}
+.msg-received {
+	color: hsl(276, 55%, 52%);
+	background: hsla(276, 58%, 40%, 0.1);
+	width: 70%;
+	border-radius: 8px;
+	line-height: 12px;
+	padding: 0.3rem;
+	margin-bottom: 0.4rem;
+}
+.imgs {
+	align-self: flex-end;
+	margin-bottom: 0.4rem;
+}
+.img1,
+.img2,
+.img3 {
+	width: 30px;
+	height: 30px;
+	border-radius: 10px;
+}
+
+.msg-sent {
+	color: hsl(271, 15%, 43%);
+	background-color: white;
+	width: 45%;
+	border-radius: 8px;
+	line-height: 13px;
+	padding: 0.2rem;
+	align-self: flex-end;
+	margin-bottom: 0.4rem;
+}
+.sent-1 {
+	width: 70%;
+}
+.offer {
+	color: hsl(270, 20%, 96%);
+	background: linear-gradient(to right, hsl(293, 100%, 63%) 40%, hsl(264, 100%, 61%));
+	width: 80%;
+	height: 1.5rem;
+	padding: 5px 20px;
+	margin-bottom: 0.4rem;
+	border-radius: 7px;
+	border-bottom-left-radius: 4px;
+	display: flex;
+	justify-content: space-between;
+}
+.price {
+	font-size: 0.75rem;
+	font-weight: 500;
+	color: white;
+}
+.txt-holder {
+	background-color: white;
+	color: hsl(206, 6%, 79%);
+	height: 1.8rem;
+	border-radius: 20px;
+	margin: 5px 0;
+	padding: 15px 5px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.submit {
+	background-color: hsl(271, 36%, 24%);
+	height: 1.6rem;
+	width: 1.6rem;
+	border-radius: 50%;
+	position: relative;
+}
+.submit::before {
+	content: " ";
+	position: absolute;
+	width: 10px;
+	height: 2.5px;
+	top: 38%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(45deg);
+	background-color: #fff;
+	border-radius: 2px;
+}
+.submit::after {
+	content: " ";
+	position: absolute;
+	width: 10px;
+	height: 2.5px;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(-45deg);
+	background-color: #fff;
+	border-radius: 2px;
+}
+.text {
+	text-align: center;
+
+	width: 100vw;
+	height: 40vh;
+
+	line-height: 27px;
+	padding: 0 2rem;
+}
+.text h1 {
+	font-size: 1.75rem;
+	font-weight: 700;
+}
+.text p {
+	color: hsl(270, 7%, 64%);
+	padding: 15px 0;
+}
+@media (min-width: 1440px) {
+	main {
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+		padding: 0 5rem;
+	}
+	.samuel {
+		width: 30px;
+		height: 30px;
+	}
+	.img1,
+	.img2,
+	.img3 {
+		width: 45px;
+		height: 45px;
+		border-radius: 10px;
+	}
+
+	h3 {
+		font-size: 0.8rem;
+	}
+	.sub-heading {
+		font-size: 10px;
+	}
+	.core {
+		font-size: 11px;
+	}
+
+	.text {
+		width: 50vw;
+		text-align: left;
+	}
+	.text h1 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+	}
+	.phone {
+		width: 18%;
+	}
+	.text {
+		width: 40%;
+		height: 30%;
+	}
+}
